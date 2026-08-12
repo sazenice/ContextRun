@@ -1,0 +1,13 @@
+# Allows chaining /run commands
+# NOT RECOMMENDED
+allow-chaining: false
+
+# Allow running commands as console
+run-console: true
+# Allow running commands as command blocks
+run-block: true
+
+# Allow running /run in a player context
+run-player: true
+# Notify the player which the /run command is ran as
+notify-player: false

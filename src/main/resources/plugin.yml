@@ -1,0 +1,19 @@
+name: ContextRun
+prefix: CR
+version: '${version}'
+
+main: fun.corruptedsmp.contextRun.ContextRun
+api-version: '1.21'
+
+authors: [ sazenice ]
+website: corruptedsmp.fun
+
+commands:
+  run:
+    usage: /<command> <context> [player] <command...>
+    description: Run commands in a different context
+    permission: contextrun.run
+
+permissions:
+  contextrun.run:
+    default: op
