@@ -6,8 +6,5 @@ allow-chaining: false
 run-console: true
 # Allow running commands as command blocks
 run-block: true
-
 # Allow running /run in a player context
 run-player: true
-# Notify the player which the /run command is ran as
-notify-player: false
