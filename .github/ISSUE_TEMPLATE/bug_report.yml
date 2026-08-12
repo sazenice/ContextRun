@@ -1,0 +1,42 @@
+name: "Bug report"
+description: "Create a bug report to help us improve"
+labels: ["bug"]
+assignees: sazenice
+body:
+  - type: checkboxes
+    id: duplicate
+    attributes:
+      label: "I've searched existing issues and couldn't find a duplicate."
+      description: "I confirm this is not a duplicate."
+      options:
+        - label: "I confirm this is not a duplicate."
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Plugin version/Commit"
+      description: "What plugin version/Commit are you using? (Tip: type /version ContextRun)" 
+      placeholder: "Example: 1.0/358wb3"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened? + Log file"
+      description: "A clear and concise description of what the bug is with the log file attached."
+    validations:
+      required: true
+  - type: textarea
+    id: to-reproduce
+    attributes:
+      label: "To Reproduce"
+      description: "Steps to reproduce the behavior"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      description: "A clear and concise description of what you expected to happen."
+    validations:
+      required: true
