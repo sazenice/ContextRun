@@ -8,3 +8,8 @@ run-console: true
 run-block: true
 # Allow running /run in a player context
 run-player: true
+# Notify the target player of a command execution when a /run player <player> command is run on them
+notify-player: false
+
+# Enable anonymous telemetry
+telemetry: true

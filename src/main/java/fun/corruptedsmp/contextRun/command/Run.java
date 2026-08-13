@@ -62,6 +62,9 @@ public class Run implements CommandExecutor, TabCompleter {
                 String cmd = String.join(" ", Arrays.copyOfRange(args, 2, args.length));
                 sender.sendMessage(NamedTextColor.GREEN + "Dispatching command...");
                 Bukkit.dispatchCommand(target, cmd);
+                if (plugin.getConfig().getBoolean("notify-player")){
+                    target.sendMessage(NamedTextColor.BLUE + "A player is executing a command as you.");
+                }
                 break;
             }
             case "block": {
